@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('/frontend/public/dog.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.8);
+    z-index: -1;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ece74e;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 2px solid #ece74e;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+input, button {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #333;
+    color: #fff;
+}
+
+input:focus {
+    border-color: #ece74e;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 248, 44, 0.97);
+}
+
+button {
+    background-color: #ece74e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ece74e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: white;
+}
+
+.result h2 {
+    margin-top: 0;
+    color: #ece74e;
+}
+
+.result p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    color: #777;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.8);
+}

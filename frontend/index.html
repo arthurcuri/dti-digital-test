@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Petshop Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="form-container">
+        <h1>Best Petshop Finder</h1>
+        <form id="petshopForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="smallDogs">Number of Small Dogs:</label>
+            <input type="number" id="smallDogs" name="smallDogs" required>
+            <label for="bigDogs">Number of Big Dogs:</label>
+            <input type="number" id="bigDogs" name="bigDogs" required>
+            <button type="submit">Find Best Petshop</button>
+        </form>
+    </div>
+    <div id="result-container" class="container" style="display: none;">
+        <div id="result" class="result"></div>
+        <button id="retryButton">Find Another Petshop</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Best Petshop Finder</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
